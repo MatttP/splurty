@@ -40,15 +40,19 @@
     <br class="clear" />
 
     <div class="container">
-
-    <%= yield %>
-
+      <%= yield %>
     </div>
 
     <div class="footer">
       <div class="container">
         <div class="row">
-          <p class="text-muted">PLace sticky footer content here. </p>
+          <div class="col-6">
+            <%= link_to "This Ain't Enough, I Need More!!!", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Created: Treasure Is, FLA by Matt P. in part with UCF coding bootcamp.
+            Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
+          </div>
         </div>
       </div>
     </div>
