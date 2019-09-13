@@ -13,23 +13,45 @@
 
     <header class="row">
       <div class="col-3">
-        LOGO
+        
+        <div class="circle">
+          <br />
+          Drive Fast,
+          <br />
+          Take Chances,
+          <br />
+          & Hold Fast!
+        </div>
       </div>
 
-      <div class="col-4">
-        Splurting out unsolicited words of encouragement
+      <div class="col-4 slogan">
+        Because sometimes random quotes of encouragement are what we need..
       </div>
       
-      <div class="col-5">
+      <div class="col-5 links">
         <%= link_to 'Contribute', '#' %>
         <%= link_to 'About', '#' %>
       </div>
 
     </header>
 
+    <hr />
+
     <br class="clear" />
 
+    <div class="container">
+
     <%= yield %>
+
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <p class="text-muted">PLace sticky footer content here. </p>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
