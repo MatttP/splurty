@@ -32,7 +32,7 @@
      
        <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
-        
+
         <%= link_to 'About', about_path %>
       </div>
 
@@ -52,8 +52,9 @@
           </div>
       <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
-            <%= f.input :saying %>
-            <%= f.input :author %>
+            <%= f.input :saying, label: "What inspirational saying do you want to add?", placeholder: "Type something encouraging and positive." %>
+            <br />
+            <%= f.input :author, label: "Who said these wise words?", placeholder: "Be honest.." %>
             <br />
             <%= f.submit 'Create', class: 'btn btn-outline-warning' %>
           <% end %>
@@ -85,10 +86,10 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <%= link_to "This Ain't Enough, I Need More!!!", root_path, class: 'next-quote' %>
           </div>
-          <div class="col-6 footer-blurb">
+          <div class="col-12 col-sm-6 footer-blurb">
             Created: Treasure Is, FLA by Matt P. in part with UCF coding bootcamp.
             Want to build your own Splurty Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
           </div>
